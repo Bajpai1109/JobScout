@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=EB+Garamond&family=IBM+Plex+Sans:wght@500;700&family=Montserrat:wght@500&family=Signika+Negative:wght@700&display=swap');
+.animate__fadeInDown {
+    --animate-duration: 1.5s;
+}
+.register-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #89CFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .register-main-container{
+        width: 90%;
+        height: 90%;
+        border-radius: 40px;
+        display: flex;
+        
+        .register-design-container{
+            width: 60%;
+            height: 100%;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            background-image: url('./register-background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .register-job-scout{
+                display: flex;
+                width: 90%;
+                margin-left: 10%;
+                margin-top: 30px;
+                .register-job-scout-icon{
+                    height: 80px;
+                    width: 80px;
+                }
+                .register-job-scout-text{
+                    display: flex;
+                    align-items: end;
+                    font-size: 2.4rem;
+                    font-family: 'Cormorant Garamond', serif;
+                    font-weight: bolder;
+                    color: #fff;
+                }
+            }
+            
+            
+            .carousel{
+                width: 100%;
+                height: 60%;
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+                padding-top: 5%;
+                color: #ffffff;
+                
+            }
+            .carousel-item{
+                margin-left: 10%;
+                .carousel-slide-heading{
+                    width: 80%;
+                    display: block;
+                    font-size: 2.9rem;
+                    margin-bottom: 15px;
+                    font-family: 'Signika Negative', sans-serif;
+                    font-weight: 700;
+                }
+
+                .carousel-slide-text{
+                    width: 55%;
+                    line-height: 2;
+                    font-size: 1.18rem;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                }
+            }
+            .carousel-control-prev{
+                margin-left: -1%;
+                width: 50px;
+            }
+            .carousel-control-next{
+                margin-right: -1.5%;
+                width: 50px;
+            }
+            .register-already-registered-div{
+                margin-top: 90px;
+                width: 95%;
+                display: flex;
+                justify-content: end;
+                .register-already-registered{
+                    display: flex;
+                    justify-content: end;
+                    color: #fff;
+                    font-size: 1.1rem;
+                    a{
+                        text-decoration: none;
+                        padding-left: 5px;
+                        color: #00A9FF;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .register-form-container{
+            width: 40%;
+            height: 100%;
+            background-color: #fff;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            
+
+            .register-form{
+                width: 100%;
+                height: 100%;
+                margin-top: 30px;
+                display: block;
+                
+                .register-text-heading{
+                    text-align: center;
+                    font-size: 2.6rem;
+                    font-weight: bold;
+                    margin-bottom: 2%;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                }
+                .register-text{
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 4%;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                }
+                .register-detail{
+                    margin-left: 7%;
+                    margin-right: 12%;
+
+                    .register-name-div{
+                        label{
+                            margin-bottom: 2.5%;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            &::before {
+                                    content: "*";
+                                    color: black;
+                                    font-size: .7rem;
+                                    float: right;
+                                    padding-left: 1px;
+                                }
+                        }
+                        
+                    }
+                    .register-email-div{
+                        label {
+                                margin-bottom: 2.5%;
+                                margin-top: 5%;
+                                font-family: 'IBM Plex Sans', sans-serif;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                &::before {
+                                        content: "*";
+                                        color: black;
+                                        font-size: .7rem;
+                                        float: right;
+                                        padding-left: 1px;
+                                    }
+                            }
+                            
+                    }
+                    .register-pass-div{
+                        label {
+                            margin-top: 5%;
+                                margin-bottom: 2.5%;
+                                font-family: 'IBM Plex Sans', sans-serif;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                &::before {
+                                        content: "*";
+                                        color: black;
+                                        font-size: .7rem;
+                                        float: right;
+                                        padding-left: 1px;
+                                    }
+                            }
+                            
+                    }
+                }
+                .register-btn-div{
+                    margin-top: 5%;
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                
+                .register-btn{
+                    display: inline-block;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        line-height: 1;
+                        border-radius: 7px;
+                        transition: all .2s ease-in-out;
+                        border: 1px solid transparent;
+                        letter-spacing: 2px;
+                        min-width: 160px;
+                        text-transform: uppercase;
+                        white-space: normal;
+                        font-weight: 700;
+                        text-align: center;
+                        padding: 16px 14px 18px;
+                        color: #fff;
+                        background-color: #0174BE;
+                        height: 48px;
+                        width: 100%;
+                        
+                    
+                        &:hover {
+                            background-color: #146C94;
+                            border-radius: 40px;
+                            
+                        }
+                }
+            }
+                         .separator {
+                             height: 1px;
+                             margin-left: 7%;
+                             width: 80%;
+                             background: #bbbbbb;
+                             display: flex;
+                             align-items: center;
+                             justify-content: center;
+                             margin-top: 7%;
+                         }
+            
+                         .separator::before {
+                             content: "Or";
+                             font-family: 'Montserrat', sans-serif;
+                             color: #6c757d;
+                             font-size: 1.18rem;
+                             padding: 0 5px;
+                             margin-top: 2px;
+                             background: #fff;
+                         }
+                         .register-google{
+                            .register-google-btn{
+                                background-color: #fff;
+                                transition: all .2s ease-in-out;
+                                width: 80%;
+                                margin-top: 35px;
+                                margin-left: 7%;
+                                color: rgb(98, 96, 96);
+                                font-size: 1.1rem;
+                                height: 55px;
+                                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+                                
+                                    &:hover {
+                                        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+                                        border-radius: 40px;
+                                    }
+                                
+                                    .register-google-icon {
+                                        padding-right: 4%;
+                                    }
+                            }
+                         }
+                         .register-job-scout-header{
+                            display: none;
+
+                            .register-job-scout-icon-header{
+                                height: 70px;
+                                width: 70px;
+                            }
+                            .register-job-scout-text-header{
+                                display: flex;
+                                align-items:center;
+                                font-size: 2.4rem;
+                                    font-family: 'Cormorant Garamond', serif;
+                                    font-weight: bolder;
+                                    color: #000;
+                            }
+                         }
+                         .register-form-signin{
+                            display: none;
+                            justify-content: center;
+                            margin-top: 30px;
+                            font-family: 'IBM Plex Sans', sans-serif;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                         }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .register-design-container{
+        display: none;
+    }
+    .register-container{
+        height: 111vh !important;
+    }
+        
+    .register-form-container{
+        width: 95% !important;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+        height: 105vh !important;
+    }
+        .register-job-scout-header {
+            display: flex !important;
+            justify-content: center;
+            margin-bottom: 2%;
+        }
+        .google-btn{
+            margin-top: 5px !important;
+        }
+        .separator{
+            margin-top: 3% !important;
+        }
+        .register-form-signin{
+            display: flex !important;
+        }
+        
+}
+
+

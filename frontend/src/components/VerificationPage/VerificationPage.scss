@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=EB+Garamond&family=IBM+Plex+Sans:wght@500;700&family=Montserrat:wght@500&family=Signika+Negative:wght@700&display=swap');
+.verify-outermost-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #89CFF3;
+    .verify-job-scout {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-top: 30px;
+            .verify-job-scout-icon {
+                height: 80px;
+                width: 80px;
+            }
+    
+            .verify-job-scout-text {
+                display: flex;
+                align-items: end;
+                font-size: 2.7rem;
+                font-family: 'Cormorant Garamond', serif;
+                font-weight: bolder;
+                color: #fff;
+            }
+        }
+        .verification-main-container{
+            width: 100%;
+            height: 75%;
+            background-color: #89CFF3;
+            display: flex;
+            justify-content: center;
+            .verification-inner-container{ 
+                width: 75%;
+                height: 65vh;
+                margin-top: 3%;
+                background-color: beige;
+                border-radius: 20px;
+            }
+        }
+
+}
+
+@media only screen and (max-width: 760px) {
+  }
+
